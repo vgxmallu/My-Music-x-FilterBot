@@ -22,7 +22,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 BOT_START_TIME = time()
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://envs.sh/YxC.jpg https://envs.sh/YxR.jpg https://envs.sh/YxH.jpg https://envs.sh/Yxk.jpg https://envs.sh/Yxv.jpg https://envs.sh/YxU.jpg https://envs.sh/Yx4.jpg')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/s2B.png')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1892771262').split()]
@@ -41,12 +41,12 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mn_files')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002167427268'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mnbots_support')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'songdownload_group')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', 'False')), False)
 IMDB = is_enabled((environ.get('IMDB', 'False')), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', 'True')), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CUSTOM_FILE_CAPTION}") 
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "📂 <em>File Name</em>: <code>{file_name}</code>\n\n ♻ <em>File Size</em>:{file_size} \n\n <b><i>Latest Movies -</i> </b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "📂 <em>File Name</em>: <code>{file_name}</code>\n\n ♻ <em>File Size</em>:{file_size}")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10 \n🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
