@@ -14,12 +14,12 @@ logger = logging.getLogger(__name__)
 # Configuration options (can be extended as needed)
 CONFIG = {
     "bot_username": "REXIESCATBOT",
-    "main_channel_url": "https://t.me/mn_movies2",
-    "ott_updates_channel_url": "https://t.me/new_ott_movies3",
-    "photo_url": "https://i.ibb.co/Q9Hm3Dg/175540848.jpg",  # Replace with your actual image URL
-    "welcome_message": "**{greeting} {name} 👻\n\nWelcome to {chat_name}! Your request has been approved.\n\nSend /start to know more.**",
+    "main_channel_url": "https://t.me/xbots_x",
+    "ott_updates_channel_url": "https://t.me/xbots_x",
+    "photo_url": "https://envs.sh/s2B.png",  # Replace with your actual image URL
+    "welcome_message": "**{greeting} {name} 👻\n\nWelcome to {chat_name}! Your request has been approved.\n\nSend /start to know more.**\n\n©️ @XBOTSX",
     "greeting_messages": {
-        'en': ['Good Morning', 'Good Afternoon', 'Good Evening'],
+        'en': ['🏞️Good Morning', '🌤️Good Afternoon', '🌇Good Evening'],
         'ru': ['Доброе утро', 'Добрый день', 'Добрый вечер']
     }
 }
@@ -44,11 +44,11 @@ async def accept_request(client, r):
     try:
         # Create Inline Keyboard
         rm = InlineKeyboardMarkup([
-            [InlineKeyboardButton('🎉 Add Me To Your Groups 🎉', url=f'http://t.me/{CONFIG["bot_username"]}?startgroup=true')],
+            [InlineKeyboardButton('+ Add Me To Your Music Groups +', url=f'http://t.me/{CONFIG["bot_username"]}?startgroup=true')],
             [
-                InlineKeyboardButton('OTT Updates', url=CONFIG["ott_updates_channel_url"]),
+                InlineKeyboardButton('Channel', url=CONFIG["ott_updates_channel_url"]),
                 InlineKeyboardButton('Main Channel', url=CONFIG["main_channel_url"]),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('Repo', url='https://github.com/adi-code22/EvaMaria')
             ]
         ])
 
