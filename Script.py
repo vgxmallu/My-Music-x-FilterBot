@@ -44,7 +44,7 @@ Currently using free server so please Dont kill Me...
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
     AUTOFILTER_TXT = """
-**Add music to your Music DB**
+<b>Add MUSIC'S to my DB</b>
     
 1. Make me admin in your Group ✖️🎵.
 2.and don't forward movie files. Audios only
