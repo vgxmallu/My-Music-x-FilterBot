@@ -44,16 +44,12 @@ Currently using free server so please Dont kill Me...
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
     AUTOFILTER_TXT = """
-
-<b>ɴᴏᴛᴇ: Fɪʟᴇ Iɴᴅᴇx</b>
-1. ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ'ꜱ ᴘʀɪᴠᴀᴛᴇ.
-2. ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇꜱ ɴᴏᴛ ᴄᴏɴᴛᴀɪɴꜱ ᴄᴀᴍʀɪᴘꜱ, ᴘᴏʀɴ ᴀɴᴅ ꜰᴀᴋᴇ ꜰɪʟᴇꜱ.
-3. ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ Qᴜᴏᴛᴇꜱ. ɪ'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ.
-
-<b>Nᴏᴛᴇ: AᴜᴛᴏFɪʟᴛᴇʀ</b>
-1. Aᴅᴅ ᴛʜᴇ ʙᴏᴛ ᴀs ᴀᴅᴍɪɴ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-2. Usᴇ /connect ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴛʜᴇ ʙᴏᴛ.
-3. Usᴇ /settings ᴏɴ ʙᴏᴛ's PM ᴀɴᴅ ᴛᴜʀɴ ᴏɴ AᴜᴛᴏFɪʟᴛᴇʀ ᴏɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ.."""
+**Add music to my db**
+    
+1. Make me admin in your Group ✖️🎵.
+2.and don't forward movie files. Audios only
+3. If you want to save your musics to my Database, just forward last message to me, or copy the last message link from your music database channel and paste here.
+"""
     CONNECTION_TXT = """Help: <b>Connections</b>
 
 - Used to connect bot to PM for managing filters 
@@ -90,17 +86,25 @@ these are the extra features of ShobanaFilterBot
 This module only works for my admins
 
 <b>Commands and Usage:</b>
-• /logs - <code>to get the rescent errors</code>
-• /stats - <code>to get status of files in db.</code>
-• /delete - <code>to delete a specific file from db.</code>
-• /users - <code>to get list of my users and ids.</code>
-• /chats - <code>to get list of the my chats and ids </code>
-• /leave  - <code>to leave from a chat.</code>
-• /disable  -  <code>do disable a chat.</code>
-• /ban  - <code>to ban a user.</code>
-• /unban  - <code>to unban a user.</code>
-• /channel - <code>to get list of total connected channels</code>
-• /broadcast - <code>to broadcast a message to all users</code>"""
+/logs - <code>to get the rescent errors</code>
+/stats - <code>to get status of files in db.</code>
+/delete - <code>to delete a specific file from db.</code>
+/users - <code>to get list of my users and ids.</code>
+/chats - <code>to get list of the my chats and ids </code>
+/leave  - <code>to leave from a chat.</code>
+/disable  -  <code>do disable a chat.</code>
+/ban  - <code>to ban a user.</code>
+/unban  - <code>to unban a user.</code>
+/channel - <code>to get list of total connected channels</code>
+/broadcast - <code>to broadcast a message to all users</code>
+/ping - <code>check ping.</code>
+/usage - <code>usage of bot.</code>
+/delete| /deleteall - delete files 
+/set_template
+/setskip
+"""
+
+    
     STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
  𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
  𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
