@@ -118,7 +118,7 @@ Total Members = <code>{}</code>
 Added By - {}
 """
     RESULT_TXT="""
-<blockquote>Here is your {} audio 🎧</blockquote>"""
+<blockquote>Here is your Searched results «⁨{}»🎧.</blockquote>"""
 
     CUSTOM_FILE_CAPTION = """
 <pre>🎧 {file_name} | {file_size}</pre>
