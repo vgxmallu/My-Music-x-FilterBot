@@ -428,7 +428,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Piracy Is Crime')
+        await query.answer('🎵🎧✖️')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('× Manual F', callback_data='manuelfilter'),
@@ -618,7 +618,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('Piracy Is Crime')
+    await query.answer('🎧🎵✖️')
 
 
 async def auto_filter(client, msg, spoll=False):
@@ -757,9 +757,7 @@ async def advantage_spell_chok(client, msg):
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
                  InlineKeyboardButton('ENG', 'esp'),
-                 InlineKeyboardButton('MAL', 'msp'),
-                 InlineKeyboardButton('HIN', 'hsp'),
-                 InlineKeyboardButton('TAM', 'tsp')
+                 InlineKeyboardButton('MAL', 'msp')
         ],[
                  InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")
              ]]
@@ -777,9 +775,7 @@ async def advantage_spell_chok(client, msg):
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
                  InlineKeyboardButton('ENG', 'esp'),
-                 InlineKeyboardButton('MAL', 'msp'),
-                 InlineKeyboardButton('HIN', 'hsp'),
-                 InlineKeyboardButton('TAM', 'tsp')
+                 InlineKeyboardButton('MAL', 'msp')
         ],[
                  InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f"https://www.google.com/search?q={reqst_gle}")
              ]]
