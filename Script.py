@@ -122,6 +122,9 @@ Added By - {}
 
     CUSTOM_FILE_CAPTION = """
 <pre>🎧 {file_name} | {file_size}</pre>
+
+<pre>©️: @XBOTS_X
+📥: @MusicFilterX_Bot<pre>
 """
 
     
