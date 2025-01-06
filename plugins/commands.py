@@ -97,6 +97,8 @@ async def start(client, message):
         ],[
              InlineKeyboardButton(f'× Channel', url='https://t.me/xbots_x'),
              InlineKeyboardButton(f'Group ×', url='https://t.me/songdownload_group')
+        ],[
+             InlineKeyboardButton('Stats\n×', callback_data='stats')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
