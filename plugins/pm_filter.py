@@ -418,6 +418,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
              InlineKeyboardButton(f'× Channel​', url='https://t.me/xbots_x'),
              InlineKeyboardButton(f'Group ×', url='https://t.me/songdownload_group')
+        ],[
+             InlineKeyboardButton('Stats\n×', callback_data='stats')
+            
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
