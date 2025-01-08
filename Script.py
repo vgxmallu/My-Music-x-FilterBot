@@ -121,12 +121,12 @@ Added By - {}
 <blockquote>Here is your Searched results «⁨{}»🎧.</blockquote>"""
 
     CUSTOM_FILE_CAPTION = """
-<pre>🎧 {file_name} | {file_size}</pre>
+<blockquote>🎧 {file_name} | {file_size}</blockquote> 
 
 <pre>©️: @XBOTS_X
 📥: @MusicFilterX_Bot<pre>
 """
-
+#</pre>
     
     RESTART_GC_TXT = """
 <b>𝖡𝗈𝗍 𝖱𝖾𝗌𝗍𝖺𝗋𝗍𝖾𝖽 !</b>
