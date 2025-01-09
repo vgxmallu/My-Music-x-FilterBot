@@ -44,11 +44,14 @@ Currently using free server so please Dont kill Me...
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
     AUTOFILTER_TXT = """
-<b>Add MUSIC'S to my DB</b>
-    
-1. Make me admin in your Group ✖️🎵.
-2.and don't forward movie files. Audios only
-3. If you want to save your musics to my Database, just forward last message to me, or copy the last message link from your music database channel and paste here.
+<b>Add MUSIC'S to my DB, and use to your group!</b>
+
+× Add me to your music requesting group.
+× Make me admin in your Group ✖️🎵.
+× and request Music's there.
+
+×+ If you want to add your musics files to my Database, just forward last message from your music DB channel, or copy the last message link from your music database channel and paste here.
+×÷ and don't forward movie files. Audios file's only
 
 /buggs to report my owner.
 """
