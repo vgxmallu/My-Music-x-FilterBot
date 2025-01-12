@@ -411,17 +411,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('+ Add me to Chats!', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('× Commends', callback_data='help'),
-            InlineKeyboardButton('About ×', callback_data='about')
-        ],[
-             InlineKeyboardButton(f'× Channel​', url='https://t.me/xbots_x'),
-             InlineKeyboardButton(f'Group ×', url='https://t.me/songdownload_group')
-        ],[
-             InlineKeyboardButton('Stats\n×', callback_data='stats')
-            
-            ]]
+            InlineKeyboardButton('➕ Add me to Group!', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+         ],[
+            InlineKeyboardButton('♣️Help', callback_data='help'),
+            InlineKeyboardButton('💢About', callback_data='about'),
+            InlineKeyboardButton('📊Status', callback_data='stats')
+         ],[
+            InlineKeyboardButton(f'📣My Channel​', url='https://t.me/xbots_x'),
+            InlineKeyboardButton(f'🎵Music Group', url='https://t.me/songdownload_group')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -431,12 +429,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('🎵🎧✖️')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('× Manual F', callback_data='manuelfilter'),
-            InlineKeyboardButton('M AutoF ×', callback_data='autofilter'),
-            InlineKeyboardButton('× Connect', callback_data='coct'),
-        ], [
             InlineKeyboardButton('<-', callback_data='start'),
-            InlineKeyboardButton('Owner', callback_data='admin')
+            InlineKeyboardButton('Admins', callback_data='admin')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -520,6 +514,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "admin":
         buttons = [[
+            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
+            InlineKeyboardButton('Connection', callback_data='coct')
+        ],[
             InlineKeyboardButton('<-', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
