@@ -1,11 +1,20 @@
 class script(object):
-    START_TXT = """Hey {} how are you:).
+    START_TXT = """
+<blockquote>Hey {} how are you:).
 𝖨𝗆 𝖺 music 𝖿𝗂𝗅𝗍𝖾𝗋 𝖻𝗈𝗍 𝗐𝗁𝗂𝖼𝗁 𝖼𝖺𝗇 𝗉𝗋𝗈𝗏𝗂𝖽𝖾 Musics here or request 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌.
 
-Click Help for more information.
+<b>Click Help for more information.</b></blockquote>
 """
     HELP_TXT = """
      Hey  {} ×+
+
+🎵 <b>help for music search:</b>
+To find music just enter it's name and send it to me. or you can request music in Groups just add me to your chats
+
+<b>Add Music to My DB:</b>
+×+ If you want to add your musics files to my Database, just forward last message from your music DB channel, or copy the last message link from your music database channel and paste here.
+
+/buggs to report my owner.
 """
     ABOUT_TXT = """<b>
 × Real Owner of Repo: <a href=https://github.com/adi-code22>Eva-Maria</a>
@@ -48,7 +57,7 @@ Click Help for more information.
 <b>Add MUSIC'S to my DB, and use to your group!</b>
 
 × Add me to your music requesting group.
-× Make me admin in your Group ✖️🎵.
+×✅ Make me admin in your Group ✖️🎵.
 × and request Music's there.
 
 ×+ If you want to add your musics files to my Database, just forward last message from your music DB channel, or copy the last message link from your music database channel and paste here.
