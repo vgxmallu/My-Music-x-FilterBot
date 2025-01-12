@@ -40,17 +40,18 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('+ Add me to Chats!', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('× Commands', callback_data='help'),
-            InlineKeyboardButton('About ×', callback_data='about')
+            InlineKeyboardButton('➕ Add me to Group!', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+         ],[
+            InlineKeyboardButton('♣️Help', callback_data='help'),
+            InlineKeyboardButton('💢About', callback_data='about'),
+            InlineKeyboardButton('📊Status', callback_data='stats')
         ], [
-             InlineKeyboardButton(f'× Channel​', url='https://t.me/xbots_x'),
-             InlineKeyboardButton(f'Group ×', url='https://t.me/songdownload_group')
+             InlineKeyboardButton(f'📣My Channel​', url='https://t.me/xbots_x'),
+             InlineKeyboardButton(f'🎵Music Group', url='https://t.me/songdownload_group')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         #add emoji loading then run 1 sec and dlt
-        m=await message.reply_text("Starting...") 
+        m=await message.reply_text("🫣Starting...") 
         await asyncio.sleep(1.2)#1.2sec sleep
         await m.delete()
         await message.reply_photo(
@@ -90,15 +91,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('+ Add me to Chats!', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('× Commands', callback_data='help'),
-            InlineKeyboardButton('About ×', callback_data='about')
-        ],[
-             InlineKeyboardButton(f'× Channel', url='https://t.me/xbots_x'),
-             InlineKeyboardButton(f'Group ×', url='https://t.me/songdownload_group')
-        ],[
-             InlineKeyboardButton('Stats\n×', callback_data='stats')
+            InlineKeyboardButton('➕ Add me to Group!', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+         ],[
+            InlineKeyboardButton('♣️Help', callback_data='help'),
+            InlineKeyboardButton('💢About', callback_data='about'),
+            InlineKeyboardButton('📊Status', callback_data='stats')
+        ], [
+             InlineKeyboardButton(f'📣My Channel​', url='https://t.me/xbots_x'),
+             InlineKeyboardButton(f'🎵Music Group', url='https://t.me/songdownload_group')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -122,7 +122,7 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("Please wait")
+        sts = await message.reply("🎵")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -132,7 +132,7 @@ async def start(client, message):
                     msgs=json.loads(file_data.read())
             except:
                 await sts.edit("FAILED")
-                return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE.")
+                return await client.send_message(LOG_CHANNEL, "❌UNABLE TO OPEN FILE.")
             os.remove(file)
             BATCH_FILES[file_id] = msgs
         for msg in msgs:
@@ -238,7 +238,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('No such file exist.')
+        return await message.reply('❌No such file exist.')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
