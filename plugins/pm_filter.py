@@ -91,14 +91,14 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("<-", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("❮-", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"🎧 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"📃 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("->", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("-❯", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
@@ -268,7 +268,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('Piracy Is Crime')
+        return await query.answer('🎶🗿')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -297,7 +297,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('Piracy Is Crime')
+            return await query.answer('🫂👀')
         buttons = []
         for groupid in groupids:
             try:
@@ -670,7 +670,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"🎧 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="->", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="-❯", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
