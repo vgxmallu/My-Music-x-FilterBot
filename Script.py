@@ -1,16 +1,17 @@
 class script(object):
     START_TXT = """Hey {} how are you:).
-𝖨𝗆 𝖺 music 𝖿𝗂𝗅𝗍𝖾𝗋 𝖻𝗈𝗍 𝗐𝗁𝗂𝖼𝗁 𝖼𝖺𝗇 𝗉𝗋𝗈𝗏𝗂𝖽𝖾 Musics 𝗂𝗇 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌.
-just 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉s+ 𝖺𝗇𝖽 𝗉𝗋𝗈𝗆𝗈𝗍𝖾 𝗆𝖾 𝖺𝗌 𝖺𝖽𝗆𝗂𝗇 𝗍𝗈 𝗅𝖾𝗍 𝗆𝖾 𝗀𝖾𝗍 𝗂𝗇 𝖺𝖼𝗍𝗂𝗈𝗇."""
+𝖨𝗆 𝖺 music 𝖿𝗂𝗅𝗍𝖾𝗋 𝖻𝗈𝗍 𝗐𝗁𝗂𝖼𝗁 𝖼𝖺𝗇 𝗉𝗋𝗈𝗏𝗂𝖽𝖾 Musics here or request 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌.
+
+Click Help for more information.
+"""
     HELP_TXT = """
-     Hey  {} 
-Currently using free server so please Dont kill Me...
+     Hey  {} ×+
 """
     ABOUT_TXT = """<b>
 × Real Owner of Repo: <a href=https://github.com/adi-code22>Eva-Maria</a>
 × Lang: Python 3
 × DB: Mongo DB
-× Server: only Secret 👀</b>"""
+× Server: VPS👀</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Music Filter x Bot  is a open source project. 
 - Source - <ahref=https://github.com/adi-code22/EvaMaria>Click Here to get source code</a>
