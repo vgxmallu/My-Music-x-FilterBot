@@ -51,7 +51,7 @@ async def start(client, message):
             InlineKeyboardButton('📊Status', callback_data='stats')
         ], [
              InlineKeyboardButton(f'📣My Channel​', url='https://t.me/xbots_x'),
-             InlineKeyboardButton(f'🎵Music Group', url='https://t.me/songdownload_group')
+             InlineKeyboardButton(f'🎵Music Group', url='https://t.me/music_X_galaxy')
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         #add emoji loading then run 1 sec and dlt
