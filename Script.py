@@ -1,18 +1,13 @@
 class script(object):
     START_TXT = """
 <blockquote>Hey {} how are you:).
-𝖨𝗆 𝖺 music 𝖿𝗂𝗅𝗍𝖾𝗋 𝖻𝗈𝗍 𝗐𝗁𝗂𝖼𝗁 𝖼𝖺𝗇 𝗉𝗋𝗈𝗏𝗂𝖽𝖾 Musics here or request 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌.
+𝖨𝗆 𝖺 music × 𝖿𝗂𝗅𝗍𝖾𝗋 𝖻𝗈𝗍 𝗐𝗁𝗂𝖼𝗁 𝖼𝖺𝗇 𝗉𝗋𝗈𝗏𝗂𝖽𝖾 Musics here or request 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉𝗌.
 
 <b>Click Help for more information.</b></blockquote>
 """
     HELP_TXT = """
-     Hey  {} ×+
-
 🎵 <b>help for music search:</b>
-To find music just enter it's name and send it to me. or you can request music in Groups just add me to your chats
-
-<b>Add Music to My DB:</b>
-×+ If you want to add your musics files to my Database, just forward last message from your music DB channel, or copy the last message link from your music database channel and paste here.
+Hey  {} , To find music just enter it's name of the song here. or you can request music in also Groups, just add me to your chats too.
 
 /buggs to report my owner.
 """
@@ -120,11 +115,15 @@ This module only works for my admins
 """
 
     
-    STATUS_TXT = """𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
- 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
- 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
- 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 
- 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> """
+    STATUS_TXT = """
+ Files: <code>{}</code>
+ Users: <code>{}</code>
+ Chats: <code>{}</code>
+ 
+ Used Storage: <code>{}</code> 
+ Free Storage: <code>{}</code>
+ """
+    
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
