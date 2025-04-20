@@ -91,20 +91,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("❮-", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("❮-Back", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f"🎧 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"📃 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("-❯", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("Next-❯", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("❮-", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("❮-Back", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"📃 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("-❯", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("Next-❯", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -411,14 +411,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add me to Group!', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-         ],[
             InlineKeyboardButton('♣️Help', callback_data='help'),
             InlineKeyboardButton('💢About', callback_data='about'),
             InlineKeyboardButton('📊Status', callback_data='stats')
          ],[
             InlineKeyboardButton(f'📣My Channel​', url='https://t.me/xbots_x'),
             InlineKeyboardButton(f'🎵Music Group', url='https://t.me/music_X_galaxy')
+        ],[
+            InlineKeyboardButton('➕ Add me to Group!', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -670,7 +670,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"🎧 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="-❯", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="Next-❯", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
@@ -726,11 +726,11 @@ async def auto_filter(client, msg, spoll=False):
             #await delau.delete()#del msg auto 10min filter
         except Exception as e:
             logger.exception(e)
-            audel = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            audel = await message.reply_photo(photo="https://files.catbox.moe/lld5af.jpg", cap, reply_markup=InlineKeyboardMarkup(btn))
             #await asyncio.sleep(300)
             #await audel.delete()#del msg auto 10min filter
     else:
-        autodel = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        autodel = await message.reply_photo(photo="https://files.catbox.moe/lld5af.jpg", cap, reply_markup=InlineKeyboardMarkup(btn))
         #await asyncio.sleep(300)
         #await autodel.delete()#del msg auto 10min filter
     if spoll:
