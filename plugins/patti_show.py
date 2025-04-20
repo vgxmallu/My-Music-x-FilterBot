@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
              InlineKeyboardButton(f'Channel​', url='https://t.me/xbots_x'),
-             InlineKeyboardButton(f'Group', url='https://t.me/songdownload_group')
+             InlineKeyboardButton(f'Group', url='https://t.me/music_X_galaxy')
          ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
