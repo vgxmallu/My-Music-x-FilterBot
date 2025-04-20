@@ -726,11 +726,11 @@ async def auto_filter(client, msg, spoll=False):
             #await delau.delete()#del msg auto 10min filter
         except Exception as e:
             logger.exception(e)
-            audel = await message.reply_photo(photo="https://files.catbox.moe/lld5af.jpg", cap, reply_markup=InlineKeyboardMarkup(btn))
+            audel = await message.reply_photo(photo="https://files.catbox.moe/lld5af.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             #await asyncio.sleep(300)
             #await audel.delete()#del msg auto 10min filter
     else:
-        autodel = await message.reply_photo(photo="https://files.catbox.moe/lld5af.jpg", cap, reply_markup=InlineKeyboardMarkup(btn))
+        autodel = await message.reply_photo(photo="https://files.catbox.moe/lld5af.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         #await asyncio.sleep(300)
         #await autodel.delete()#del msg auto 10min filter
     if spoll:
