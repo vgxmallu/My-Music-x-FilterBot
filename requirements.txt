@@ -48,7 +48,8 @@ pyrogram>=2.0.30
 pyromod
 pyrotgfork
 PyPDF2
-pymongo>=4.0
+#pymongo>=4.0#
+pymongo[srv]==3.12.3
 python-decouple
 python-dotenv>=0.21.0
 python-Levenshtein
