@@ -16,7 +16,7 @@ ML = """
 👾**Username** : @{}
 💾**DC** : {}
 ♐**ID** : `{}`
-🤖**BOT** : @Musicx_dlbot
+🤖**BOT by** : @MusicFilterX_Bot
 """
 
 @Client.on_message(filters.command("lyrics"))
