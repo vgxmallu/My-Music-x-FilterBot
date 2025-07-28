@@ -32,7 +32,10 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = environ.get('AUTH_CHANNEL')
+DEFAULT_AUTH_CHANNELS = [int(x) for x in environ.get("AUTH_CHANNEL", "").split() if x.lstrip('-').isdigit()]
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
+
+
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
